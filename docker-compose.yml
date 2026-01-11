@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  playlist-app:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - playlist-data:/app/data
+    restart: unless-stopped
+
+volumes:
+  playlist-data:

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playlist</title>
+  <meta name="description" content="Create and share collaborative playlists">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Header -->
+    <header class="header">
+      <h1 class="logo">Playlist</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+      <!-- Playlists View -->
+      <section id="playlists-view" class="view">
+        <div class="section-header">
+          <h2>Your Playlists</h2>
+          <button class="btn-primary" id="new-playlist-btn">
+            <span class="icon">+</span> New Playlist
+          </button>
+        </div>
+        <div id="playlists-grid" class="playlists-grid">
+          <!-- Playlists will be rendered here -->
+        </div>
+        <div id="empty-state" class="empty-state" style="display: none;">
+          <div class="empty-icon">🎵</div>
+          <p>No playlists yet</p>
+          <p class="subtle">Create one to get started</p>
+        </div>
+      </section>
+
+      <!-- Single Playlist View -->
+      <section id="playlist-view" class="view" style="display: none;">
+        <div class="section-header">
+          <button class="btn-back" id="back-btn">← Back</button>
+          <div class="playlist-actions">
+            <button class="btn-secondary" id="export-btn">Export</button>
+            <button class="btn-delete" id="delete-playlist-btn">Delete</button>
+          </div>
+        </div>
+        <div class="playlist-header">
+          <h2 id="playlist-title"></h2>
+          <p id="playlist-count" class="subtle"></p>
+        </div>
+        <button class="btn-add-song" id="add-song-btn">
+          <span class="icon">+</span> Add Song
+        </button>
+        <div id="songs-list" class="songs-list">
+          <!-- Songs will be rendered here -->
+        </div>
+        <div id="songs-empty" class="empty-state" style="display: none;">
+          <div class="empty-icon">🎶</div>
+          <p>No songs yet</p>
+          <p class="subtle">Search and add songs to this playlist</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- New Playlist Modal -->
+    <div id="new-playlist-modal" class="modal" style="display: none;">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content">
+        <h3>New Playlist</h3>
+        <input type="text" id="playlist-name-input" placeholder="Playlist name" maxlength="50">
+        <div class="modal-actions">
+          <button class="btn-secondary" id="cancel-playlist-btn">Cancel</button>
+          <button class="btn-primary" id="create-playlist-btn">Create</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div id="search-modal" class="modal" style="display: none;">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content modal-large">
+        <h3>Add Song</h3>
+        <input type="text" id="search-input" placeholder="Search for a song or artist...">
+        <div id="search-results" class="search-results">
+          <!-- Search results will be rendered here -->
+        </div>
+        <div id="search-loading" class="loading" style="display: none;">
+          <div class="spinner"></div>
+        </div>
+        <div id="search-empty" class="empty-state-small" style="display: none;">
+          <p>No results found</p>
+        </div>
+        <div class="modal-actions">
+          <button class="btn-secondary" id="close-search-btn">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Export Modal -->
+    <div id="export-modal" class="modal" style="display: none;">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content">
+        <h3>Export Playlist</h3>
+        <textarea id="export-text" readonly></textarea>
+        <div class="modal-actions">
+          <button class="btn-secondary" id="close-export-btn">Close</button>
+          <button class="btn-primary" id="copy-export-btn">Copy</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast -->
+    <div id="toast" class="toast" style="display: none;"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
