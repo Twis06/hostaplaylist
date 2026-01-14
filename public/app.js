@@ -62,12 +62,30 @@ function renderPlaylists(playlists) {
     }
 
     emptyState.style.display = 'none';
-    playlistsGrid.innerHTML = playlists.map(playlist => `
+    playlistsGrid.innerHTML = playlists.map(playlist => {
+        const date = new Date(playlist.createdAt);
+        const dateStr = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+
+        return `
     <div class="playlist-card" data-id="${playlist.id}">
-      <h3>${escapeHtml(playlist.name)}</h3>
-      <span class="song-count">${playlist.songCount} song${playlist.songCount !== 1 ? 's' : ''}</span>
+      <div class="card-content">
+        <div class="card-back">
+          <div class="back-content">
+            <div class="count-number">${playlist.songCount}</div>
+            <div class="count-label">Song${playlist.songCount !== 1 ? 's' : ''}</div>
+            <div class="date-info">${dateStr}</div>
+          </div>
+        </div>
+        <div class="card-front">
+          <div class="front-content">
+            <h3 class="card-title">${escapeHtml(playlist.name)}</h3>
+          </div>
+          <div class="circle-deco circle-1"></div>
+          <div class="circle-deco circle-2"></div>
+        </div>
+      </div>
     </div>
-  `).join('');
+  `}).join('');
 }
 
 // Playlist View

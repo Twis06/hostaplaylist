@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div class="app">
     <!-- Header -->
@@ -29,6 +31,40 @@
         </div>
         <div id="playlists-grid" class="playlists-grid">
           <!-- Playlists will be rendered here -->
+        </div>
+
+        <!-- Christmas Tree Decoration -->
+        <div class="tree-container">
+          <svg class="christmas-tree" viewBox="0 0 200 300" xmlns="http://www.w3.org/2000/svg">
+            <!-- Star -->
+            <polygon class="star" points="100,5 105,25 125,25 110,38 117,58 100,45 83,58 90,38 75,25 95,25"
+              fill="#ffd700" />
+
+            <!-- Tree layers -->
+            <polygon class="tree-layer" points="100,30 140,90 60,90" fill="#2d5a27" />
+            <polygon class="tree-layer" points="100,60 155,140 45,140" fill="#2d5a27" />
+            <polygon class="tree-layer" points="100,100 170,200 30,200" fill="#2d5a27" />
+
+            <!-- Trunk -->
+            <rect x="85" y="200" width="30" height="40" fill="#8b4513" />
+
+            <!-- Ornaments -->
+            <circle class="ornament ornament-1" cx="80" cy="85" r="6" fill="#ff4444" />
+            <circle class="ornament ornament-2" cx="120" cy="85" r="5" fill="#4444ff" />
+            <circle class="ornament ornament-3" cx="70" cy="130" r="6" fill="#ffdd00" />
+            <circle class="ornament ornament-4" cx="130" cy="130" r="5" fill="#ff44ff" />
+            <circle class="ornament ornament-5" cx="100" cy="120" r="7" fill="#44ffff" />
+            <circle class="ornament ornament-6" cx="55" cy="180" r="6" fill="#ff8844" />
+            <circle class="ornament ornament-7" cx="145" cy="175" r="5" fill="#88ff44" />
+            <circle class="ornament ornament-8" cx="100" cy="170" r="6" fill="#ff4488" />
+            <circle class="ornament ornament-9" cx="75" cy="190" r="5" fill="#4488ff" />
+            <circle class="ornament ornament-10" cx="125" cy="190" r="6" fill="#ffff44" />
+
+            <!-- Snow on tree -->
+            <ellipse cx="100" cy="50" rx="20" ry="5" fill="rgba(255,255,255,0.3)" />
+            <ellipse cx="100" cy="90" rx="35" ry="6" fill="rgba(255,255,255,0.25)" />
+            <ellipse cx="100" cy="145" rx="50" ry="7" fill="rgba(255,255,255,0.2)" />
+          </svg>
         </div>
         <div id="empty-state" class="empty-state" style="display: none;">
           <div class="empty-icon">🎵</div>
@@ -117,4 +153,5 @@
 
   <script src="app.js"></script>
 </body>
+
 </html>
