@@ -8,6 +8,9 @@ services:
     volumes:
       - playlist-data:/app/data
     restart: unless-stopped
+    mem_limit: 1024m
+    mem_reservation: 256m
+    cpus: 0.5
 
 volumes:
   playlist-data:
