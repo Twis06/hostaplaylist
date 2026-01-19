@@ -18,6 +18,806 @@
         "artistName": "Mariah the Scientist",
         "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/8f/79/38/8f793876-4bce-b939-bf64-726fb6b28d30/886449365159.jpg/200x200bb.jpg",
         "addedAt": "2026-01-14T17:06:16.260Z"
+      },
+      {
+        "id": "411dc599-b039-440e-8f86-3c1a2597b328",
+        "trackId": "bf50cb1fae7b0068",
+        "trackName": "Only Love Can Break Your Heart",
+        "artistName": "Neil Young",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "41a8e684-e321-478f-81fb-d1c48f99f997",
+        "trackId": "6f820cee57450c18",
+        "trackName": "Only One",
+        "artistName": "Kanye West, Paul McCartney",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "ae40ca72-432f-4c4c-8b1d-593e03079345",
+        "trackId": "342739e70ecc1737",
+        "trackName": "Ave Maria, WAB 6",
+        "artistName": "Anton Bruckner, Choir of King's College, Cambridge, Stephen Cleobury",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "8b5f39c6-92d5-46f2-a85c-6c397c1e00d5",
+        "trackId": "0a0db16a38c759e6",
+        "trackName": "Someday You Will Be Loved",
+        "artistName": "Death Cab for Cutie",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "da712147-183b-4f64-bd35-f5acc860273a",
+        "trackId": "96c83ec8639ed016",
+        "trackName": "Le moulin",
+        "artistName": "Yann Tiersen",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "cc1ef9d6-9f0a-48ac-b072-2d1d419bcb69",
+        "trackId": "ced3092192507894",
+        "trackName": "Purple Rain",
+        "artistName": "Prince",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "4d50d1ae-bcdb-4bf9-9c66-fc94533cb1a8",
+        "trackId": "0be96f3345e78e23",
+        "trackName": "Chandelier",
+        "artistName": "Sia",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "91bdacca-29f7-4dff-af9e-a7477938aa66",
+        "trackId": "a708628ef30d04cf",
+        "trackName": "Piano Concerto No. 4 in G Major, Op. 58: I. Allegro moderato",
+        "artistName": "Ludwig van Beethoven, Stefan Vladar, Capella Istropolitana, Barry Wordsworth",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "67133045-e3aa-42b9-b14d-e12833b4fc85",
+        "trackId": "162620f541cebee2",
+        "trackName": "12 Motetti, Op. 4: Laboravi in gemitu meo",
+        "artistName": "Antonio Caldara, Maria Grazia Schiavo, Silvia Frigato, Martina Belli, Anicio Zorzi Giustiniani, Ugo Guagliardo, Stavanger Symphony Orchestra, Fabio Biondi",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "84c42959-454f-4fc9-8d5a-84db51e8e85b",
+        "trackId": "ba8cfffafb166c78",
+        "trackName": "Requiem",
+        "artistName": "Giacomo Puccini, Coro Sinfonico di Milano Giuseppe Verdi, Gabriele Mugnai, Roberto de Thierry, Riccardo Chailly",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "4f3ecb0b-9c12-455c-a6a1-e65be41dd1ae",
+        "trackId": "eb8759309d350ea9",
+        "trackName": "Both Sides Now",
+        "artistName": "Joni Mitchell",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "ec6e8565-9fc4-4c9e-aeca-012350fb37dd",
+        "trackId": "9807707f0b00774b",
+        "trackName": "Claressence - Live At Birdland",
+        "artistName": "Dave Holland Quintet",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "f861f986-d6e0-41ba-8f84-b1a6245619c9",
+        "trackId": "f1a8d34b08500d95",
+        "trackName": "The Silver Swan",
+        "artistName": "Orlando Gibbons, The Sixteen, Harry Christophers",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "5272c65a-5e3f-4ccf-a4bc-03f0c6f95a02",
+        "trackId": "9e838c90b15a6607",
+        "trackName": "Symphony No. 7: III. Scherzo: a. Schattenhaft",
+        "artistName": "Gustav Mahler, Chicago Symphony Orchestra, Claudio Abbado",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "1d10f74f-e767-4fb5-a390-4f0492be1c4a",
+        "trackId": "f5edc8cad2a62b8c",
+        "trackName": "How Soon Is Now? - 2011 Remaster",
+        "artistName": "The Smiths",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "42e89690-0a5e-4c28-a68c-7be6e786f715",
+        "trackId": "d7e10f040fa5c9d8",
+        "trackName": "Lauda Sion, Op. 73: II. Coro",
+        "artistName": "Felix Mendelssohn, Chamber Choir Of Europe, Nicol Matt, Württembergische Philharmonie Reutlingen",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "50a7cfb6-5240-461a-b336-8801ca40cceb",
+        "trackId": "c3c4f682c9525eb1",
+        "trackName": "Schoenberg: Verklärte Nacht, Op. 4: I. Grave (1943 Version)",
+        "artistName": "Arnold Schoenberg, Daniel Barenboim, Chicago Symphony Orchestra",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "bfa73492-b950-4de2-80d7-fea945c633e1",
+        "trackId": "9ea75eea47378939",
+        "trackName": "Faithfully",
+        "artistName": "Journey",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "f3e06a9e-b4fb-4ae2-bd31-c7afbfb106a9",
+        "trackId": "6c89faa43526f324",
+        "trackName": "Gigantic - 2007 Remaster",
+        "artistName": "Pixies",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "9df404a9-e613-483f-bb7d-7e5f0009a4fa",
+        "trackId": "5540b168020d5848",
+        "trackName": "The Post War Dream",
+        "artistName": "Pink Floyd",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "0bdd146c-8378-4595-bce7-b24d599c1cfd",
+        "trackId": "a083bf02e5f40677",
+        "trackName": "Peace of Mind",
+        "artistName": "Boston",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "3e0ef7a5-f024-461f-9b95-0852d9b3b70f",
+        "trackId": "9f7c42724108b121",
+        "trackName": "Wild Things",
+        "artistName": "Cris Williamson",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "e8c22bd0-6730-4a96-b3a7-665d75b1ddc9",
+        "trackId": "4401551e65784eb7",
+        "trackName": "No Woman, No Cry - Live At The Lyceum, London/1975",
+        "artistName": "Bob Marley & The Wailers",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "b468e3f3-f0e4-4a46-b769-a913d81f2343",
+        "trackId": "543f80b0c43471a1",
+        "trackName": "I Will Always Love You",
+        "artistName": "Whitney Houston",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "b696581f-fbc6-4189-b699-ffc8cab1d335",
+        "trackId": "9125eb696deff651",
+        "trackName": "For Crying Out Loud",
+        "artistName": "Meat Loaf",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "69d22726-a8ce-4121-a91c-46f37c91d9ca",
+        "trackId": "fc17e158bc7c55d0",
+        "trackName": "Alison",
+        "artistName": "Elvis Costello",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "549c794b-2ebc-4b8f-aa8b-4e74a19fb4b7",
+        "trackId": "f70ca9daa1030d80",
+        "trackName": "Festgesang, MWV D4, \"Gutenberg-Kantate\": No. 2. (adap. W.H. Cummings as Hark! The Herald Angels Sing) (arr. D. Willcocks)",
+        "artistName": "Sir David Willcocks, Felix Mendelssohn, Worcester Cathedral Choir, Raymond Johnston, Donald Hunt",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "4e7cab20-58dd-4b76-8ddf-cb1b300782d5",
+        "trackId": "359c90eeb4d71fc2",
+        "trackName": "Piano Concerto No. 3 in D Minor, Op. 30: II. Intermezzo. Adagio",
+        "artistName": "Sergei Rachmaninoff, Orchestra Senzaspine, Tommaso Ussardi, Pietro Beltrani",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "97cc6500-1b9f-428e-958f-439d740aefd4",
+        "trackId": "410489d3f2d6e13e",
+        "trackName": "Faust, Ballet Music: VII. Danse de Phryné. Allegro vivo",
+        "artistName": "Charles Gounod, Boston Symphony Orchestra, Seiji Ozawa",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "3543cdcc-4e33-4856-9550-8f9873c18dcf",
+        "trackId": "0eeba907533b7088",
+        "trackName": "Barber: Adagio for Strings",
+        "artistName": "Samuel Barber, Sir Simon Rattle, Berliner Philharmoniker",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "aa3c2e3d-765f-4600-8037-729abec7b867",
+        "trackId": "d3b7fb681344d598",
+        "trackName": "Mahler: Symphony No. 5 in C-Sharp Minor: IV. Adagietto. Sehr langsam",
+        "artistName": "Gustav Mahler, Daniel Barenboim, Chicago Symphony Orchestra",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "20c29d87-3e18-4ab2-94f4-0b05cd1faf84",
+        "trackId": "6ed64f2e750701d2",
+        "trackName": "The Rite of Spring: Part One: Adoration of the Earth: Introduction",
+        "artistName": "Igor Stravinsky, Teodor Currentzis, musicAeterna",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "3abd2146-280e-46aa-8b0a-58df66af453a",
+        "trackId": "d14e172d56601441",
+        "trackName": "Má Vlast (My Fatherland): Vltava (The Moldau River)",
+        "artistName": "Bedřich Smetana, David Parry, London Philharmonic Orchestra",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "f5297944-ec82-417e-bd1d-832e173bfec9",
+        "trackId": "eafa33e96724b3bb",
+        "trackName": "Symphony No. 9 in E minor, Op. 95, B. 178, \"From the New World\": Symphony No. 9 \"From the New World\" (Largo)",
+        "artistName": "Slovak Philharmonic",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "000a1cca-d5bf-44f5-83ec-fc111a07f36c",
+        "trackId": "d6f923e7201a9bcb",
+        "trackName": "Tears in Heaven - Acoustic; Live at MTV Unplugged, Bray Film Studios, Windsor, England, UK, 1/16/1992; 2013 Remaster",
+        "artistName": "Eric Clapton",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "bf8bd40d-2fc3-4d57-9b0e-2a10fa91bc5f",
+        "trackId": "a5baf0b01b119038",
+        "trackName": "Overture And A Prisoner Of The Crusades (From Chains To Freedom)",
+        "artistName": "Michael Kamen",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "d164313d-fafd-43e5-bf97-728794353402",
+        "trackId": "68fdf2e3fc7066fe",
+        "trackName": "The Planets, Op. 32: I. Mars, The Bringer of War",
+        "artistName": "Gustav Holst, Boston Symphony Orchestra, William Steinberg",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "6a8a0cf3-b01a-4d32-b7f2-60ab3783e332",
+        "trackId": "3750978764b910e4",
+        "trackName": "Grand Canyon Suite: 1. Sunrise",
+        "artistName": "Ferde Grofé, Detroit Symphony Orchestra, Antal Doráti",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "55a37cc6-4e8f-44bc-8594-0db6d1059e2d",
+        "trackId": "44c717ad84847cc6",
+        "trackName": "Requiem: 7. Pie Jesu",
+        "artistName": "Andrew Lloyd Webber, Paul Miles-Kingston, Winchester Cathedral Choir, English Chamber Orchestra, James Lancelot, Lorin Maazel, Sarah Brightman",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "2f1bd522-8653-4ed9-b85a-64775ba83955",
+        "trackId": "472a115a1982d392",
+        "trackName": "No Cars Go",
+        "artistName": "Arcade Fire",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "44127320-2441-450f-829f-f3a5b4689b1e",
+        "trackId": "13a8586c59e8e25b",
+        "trackName": "Requiem in D Minor, K. 626: VIII. Lacrimosa",
+        "artistName": "Franz Xaver Süssmayr, Wolfgang Amadeus Mozart, Uwe Gronostay, Rundfunk-Sinfonieorchester Berlin, RIAS Kammerchor, Edith Wiens, Gabriele Schreckenbach, Gerhard Faulstisch, Aldo Baldin",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "60e7d7a9-8e70-4860-b3d6-79f392b965a6",
+        "trackId": "323dfc4ee862ef07",
+        "trackName": "Toccata and Fugue in D Minor, BWV 565",
+        "artistName": "Johann Sebastian Bach, Klemens Schnorr",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "3d3629b8-5b65-4833-9e5e-810b81945e6f",
+        "trackId": "2ad5f4010d0b1872",
+        "trackName": "Symphony No. 9 in D minor, Op. 125 - \"Choral\": 2. Molto vivace - Excerpt",
+        "artistName": "Ludwig van Beethoven, Berliner Philharmoniker, Ferenc Fricsay",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "b3796b23-b006-4bca-ac7e-15f03d680836",
+        "trackId": "88bce8e3ce411cf6",
+        "trackName": "The Final Cut",
+        "artistName": "Pink Floyd",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "b0d530a1-fde1-4a94-8e68-fdfca899d1dd",
+        "trackId": "778e7ad7bfa70e60",
+        "trackName": "String Quintet No. 2 in G Major, Op. 111: III. Un poco allegretto",
+        "artistName": "Johannes Brahms, New Zealand String Quartet, Maria Lambros",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "a352b03b-578b-4539-a612-7209a6e0187c",
+        "trackId": "ceecc9570d40260e",
+        "trackName": "No One Is To Blame",
+        "artistName": "Howard Jones",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "a6f53b15-c9b6-4ef1-8064-e79cf32f1cfe",
+        "trackId": "cb3d3a2f12ba46c6",
+        "trackName": "Piano Trio No. 1 in B Major, Op. 8: II. Scherzo. Allegro molto",
+        "artistName": "Johannes Brahms, Joseph Kalichstein, Sharon Robinson, Jaime Laredo",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "41137cc4-4b86-4f79-bdaf-dc1d8894a5da",
+        "trackId": "52493caa2a71a554",
+        "trackName": "Intermezzo No. 1 in A Minor, Op. 118 - Allegro non assai, ma molto appassionato - Remastered",
+        "artistName": "Johannes Brahms, Glenn Gould",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "0ce62cc0-c025-4299-9b2c-fca7a9dbe377",
+        "trackId": "59dbbad7a9441e94",
+        "trackName": "Piano Sonata in C Minor, D. 958: I. Allegro",
+        "artistName": "Franz Schubert, Larissa Dedova",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "db50220b-e3ea-4476-a994-56eaa42ded18",
+        "trackId": "434d8b0668609f67",
+        "trackName": "24 Preludes, Op. 28: No. 6 in B Minor",
+        "artistName": "Frédéric Chopin, Emmanuel Despax",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "1f850c55-291e-49b5-aa12-042c415c1810",
+        "trackId": "3500d626c877e47b",
+        "trackName": "Mazurka No.4 in A Minor, Op. 17",
+        "artistName": "Frédéric Chopin, Janusz Olejniczak",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "96cca77a-aeea-4b2e-a700-810bb4ec8aac",
+        "trackId": "1d6837629389478d",
+        "trackName": "Etude No. 1 in Ab major, Op. 25",
+        "artistName": "Frédéric Chopin, Music Classics",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "450a8a03-e448-4c14-8686-b913a1740f0f",
+        "trackId": "b33fd5aed66210ed",
+        "trackName": "Étude No. 5 in C-Sharp Minor, Op. 42: Affannato",
+        "artistName": "Alexander Scriabin, Sviatoslav Richter, Kirill Kondrashin, Moscow Youth Orchestra",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "c282956a-b3dd-46e3-aa38-91b7639a0527",
+        "trackId": "5ab7ad5512a5d4c4",
+        "trackName": "Violin Sonata No. 1 in A Major, Op. 13: I. Allegro molto",
+        "artistName": "Gabriel Fauré, Yo-Yo Ma, Kathryn Stott",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "a7935062-7e94-4c7e-92af-9cfc0d59b6da",
+        "trackId": "d4cfc030fa0b4c70",
+        "trackName": "Violin Sonata, CFF 123: I. Allegretto ben moderato",
+        "artistName": "César Franck, Duo Gazzana",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "4e50c48b-bf18-432d-9072-bed6bd8c8943",
+        "trackId": "18f29b9043467809",
+        "trackName": "Piano Concerto in A Minor, Op. 54: I. Allegro affetuoso",
+        "artistName": "Robert Schumann, Gerard Oskamp, Shoko Sugitani, Berliner Symphoniker",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "44b776d8-32b5-4a43-a8d8-9f2013fd139f",
+        "trackId": "5817af05b02ecf18",
+        "trackName": "Piano Concerto No. 2 in G Minor, Op. 22, R. 190: III. Presto",
+        "artistName": "Camille Saint-Saëns, Ruth Slenczynska, Symphony Of The Air, Henry Swoboda",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "d8e677e7-d57d-470d-a491-ac19a50619f5",
+        "trackId": "3f88cf228848800d",
+        "trackName": "Sonate pour flûte et piano, FP 164: II. Cantilena",
+        "artistName": "Francis Poulenc, Eric Le Sage, Mathieu Dufour",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "dd15e388-c21a-4243-a32b-8bef129ce817",
+        "trackId": "2a8df7011ecf7ff0",
+        "trackName": "Symphony No. 6 in A Minor: I. Allegro energico, ma non troppo. Heftig, aber markig - Live at Philharmonie, Berlin, 2004",
+        "artistName": "Gustav Mahler, Berliner Philharmoniker, Claudio Abbado",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "3113c611-ea27-4714-a5dc-679d10fbf7b9",
+        "trackId": "db6babb89fb853a8",
+        "trackName": "String Quartet No. 8 in C Minor, Op. 110: II. Allegro molto",
+        "artistName": "Dmitri Shostakovich, Borodin Quartet",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "683d7dfb-c1c8-47a4-8a75-c9880f756608",
+        "trackId": "4d6d4b8cff519c28",
+        "trackName": "Gaspard de la nuit, M. 55: No. 3, Scarbo",
+        "artistName": "Maurice Ravel, Benjamin Grosvenor",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "34212c2e-8900-48f5-b2e5-30a82cd49685",
+        "trackId": "38b06f2e93616da6",
+        "trackName": "Symphony No. 2, Op. 16, FS 29 \"The Four Temperaments\": I. Allegro collerico",
+        "artistName": "Carl Nielsen, London Symphony Orchestra, Sir Colin Davis",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "c0b3f3f4-5e95-46ad-a3dd-f419fa01bd5a",
+        "trackId": "4261d7c497ebbe98",
+        "trackName": "Piano Sonata No. 30 in E Major, Op. 109: II. Prestissimo",
+        "artistName": "Ludwig van Beethoven, Maria João Pires",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "468fcbbb-22d6-4169-9cf0-6cb9882ee933",
+        "trackId": "48d89506a306be40",
+        "trackName": "Piano Concerto No. 20 in D Minor, K. 466: II. Romance",
+        "artistName": "Wolfgang Amadeus Mozart, Axel Gillison",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "4f58ad61-a87c-46a1-b580-99d8994eef01",
+        "trackId": "23f2834802d48e2e",
+        "trackName": "Piano Concerto No. 23 in A Major, K. 488: I. Allegro",
+        "artistName": "Wolfgang Amadeus Mozart, Jordi Mora, Elisabeth Sombart, Munich Youth Orchestra",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "9b1712cd-2c6b-4482-aac6-0d146d0a35e2",
+        "trackId": "31279e7f4ee351f5",
+        "trackName": "L'Estro Armonico, Op. 3, Concerto No. 4 in E Minor for four violins and strings, RV550: i. Andante",
+        "artistName": "Antonio Vivaldi, Jan Tomasow, Herman Nordberg, Willi Boskovsky, Vienna State Opera Orchestra, Walter Hintermeyer, Phillip Matheis, Mario Rossi",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "16b33c29-bb91-4b58-87de-eed3679f4456",
+        "trackId": "fe77d05355808f3a",
+        "trackName": "L'Estro Armonico, Op.3, Concerto No. 8 in A minor for two violins and strings, RV 522: Allegro - Larghetto e spirituoso - Allegro",
+        "artistName": "Antonio Vivaldi, Bamberger Streichorchester",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "5a96a6ea-299b-45dd-8a78-48e82998c45e",
+        "trackId": "3ce8133a7e2bd323",
+        "trackName": "Adagio in G Minor (Arr. for Harp and Orchestra)",
+        "artistName": "Tomaso Albinoni, Remo Giazotto, Stefan Klieme, Xavier De Maistre, L'Arte del mondo, Werner Ehrhardt",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "fe5c146b-579a-4e4c-8ada-cede914eaee1",
+        "trackId": "d08f17abe23f541f",
+        "trackName": "Piano Sonata No. 60 in C Major, Hob. XVI/50: II. Adagio",
+        "artistName": "Joseph Haydn, Todd Crow",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "08bb9c1d-375f-45dc-aa8d-1b4ae0d57403",
+        "trackId": "2ac1706ea0db1ea1",
+        "trackName": "Requiem in D Minor, K. 626: V. Sanctus",
+        "artistName": "Wolfgang Amadeus Mozart, Tamás Gal, Budapest Concert Orchestra, Budapest Concert Chorus",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "3dd99f46-7598-4168-b7f1-273ed83ccbbb",
+        "trackId": "857f89bf1aaa8906",
+        "trackName": "Toccata and Fugue in F Major, BWV 540: I. Toccata",
+        "artistName": "Johann Sebastian Bach, Emanuele Delucchi",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "35dcadb9-73e2-42e0-a0ac-ee768ac9a673",
+        "trackId": "e57675b82b678d4f",
+        "trackName": "Coma",
+        "artistName": "Apocalyptica",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "b88e18e1-38bd-43fd-84c8-048765b69284",
+        "trackId": "bd2c9b72b370fe7b",
+        "trackName": "6 Lieder aus \"Lotosblätter\", Op. 19, TrV 152: II. Breit' über mein Haupt",
+        "artistName": "Richard Strauss, Jonas Kaufmann, Helmut Deutsch",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "6274e760-2aff-4d89-ba67-0bd2198a4f63",
+        "trackId": "85979e482294f46f",
+        "trackName": "Kol Nidrei - Adagio For Cello, Opus 47",
+        "artistName": "Max Bruch, Alisa Weilerstein, Staatskapelle Berlin, Daniel Barenboim",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "0276961f-bd03-4f13-8773-6558ec8cbe81",
+        "trackId": "a5becd95aa236e97",
+        "trackName": "Piano Trio No. 1 in D Minor, Op. 49, MWV Q29: I. Molto allegro agitato",
+        "artistName": "Felix Mendelssohn, Julia Fischer, Daniel Müller-Schott, Jonathan Gilad",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "a86757b6-47f4-47fe-8ff8-ff1682dca3f8",
+        "trackId": "bdfbbfb4fcf0f594",
+        "trackName": "Piano Concerto No. 1 in E Minor, Op. 11: II. Larghetto",
+        "artistName": "Frédéric Chopin, Eduardo Marturet, Sergio Tiempo, Budapest Symphony Orchestra",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "046b481e-7fde-40fc-be8b-3ad6d201a7c8",
+        "trackId": "e109869a4f7b9a9a",
+        "trackName": "The Star Spangled Banner",
+        "artistName": "John Stafford Smith, The Tabernacle Choir at Temple Square, Philadelphia Orchestra, Richard P. Condie, Eugene Ormandy",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "72199c8d-6c97-4c92-b1dd-4a394d087b35",
+        "trackId": "8c7d001b939835cd",
+        "trackName": "Symphony No. 2 in D Major, Op. 36: IV. Allegro molto",
+        "artistName": "Ludwig van Beethoven, Royal Concertgebouw Orchestra, Rafael Kubelík",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "56cf78ae-0ee5-4f64-b0dc-794811dfe845",
+        "trackId": "ebfdc1cdb85494da",
+        "trackName": "Tchaikovsky: Swan Lake, Op. 20, Act 2: No. 10, Scene. Moderato",
+        "artistName": "Pyotr Ilyich Tchaikovsky, André Previn, London Symphony Orchestra",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "f273b25a-b144-4f43-8a87-921330cbf374",
+        "trackId": "21e6f99fcacc6e63",
+        "trackName": "#34",
+        "artistName": "Dave Matthews Band",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "c4158a29-7031-4bb5-a690-5c84e4e50a19",
+        "trackId": "86555a3fefb67693",
+        "trackName": "El Distorto De Melodica",
+        "artistName": "Everclear",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "e071dc1b-7df1-4a8f-8df3-c7123a6cae22",
+        "trackId": "1549018cfb6b3713",
+        "trackName": "Paris Circa 2007 Slash 08",
+        "artistName": "The Dissociatives",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "b3e5d4ca-e4b3-4d22-9e06-e7cbc36f543a",
+        "trackId": "d8f1f4fba5b8f276",
+        "trackName": "What Sweeter Music",
+        "artistName": "John Rutter, Wayne Marshall",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "2449009b-c03e-4feb-abaa-a7303ae12e4b",
+        "trackId": "c7aa4d387e6125d8",
+        "trackName": "Brandenburg Concerto No. 5 in D Major, BWV 1050: II. Affetuoso - Recorded 1964",
+        "artistName": "Johann Sebastian Bach, Karlheinz Zoeller, Michel Schwalbé, Edith Picht-Axenfeld, Berliner Philharmoniker, Herbert von Karajan",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "11bceee1-de08-42c9-affe-2f5c630eb45f",
+        "trackId": "89565c40eaab4f77",
+        "trackName": "Piano Concerto No.5 in Eb Major, Op. 73 \"Emperor\": I. Allegro",
+        "artistName": "Ludwig van Beethoven, Philharmonia Orchestra, Emil Gilels, Leopold Ludwig",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "99082475-f2b9-491f-9470-b02cca3e908f",
+        "trackId": "a0ba79f407d7419a",
+        "trackName": "Piano Sonata No. 17 in D Minor, Op. 31 No. 2 \"Tempest\": II. Adagio",
+        "artistName": "Ludwig van Beethoven, Jean-Bernard Pommier",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "4556e796-6807-41ba-a002-0c6de97ddb14",
+        "trackId": "c1345cd0c5072673",
+        "trackName": "Piano Sonata No. 8 in C Minor, Op. 13 \"Pathétique\": II. Adagio cantabile",
+        "artistName": "Ludwig van Beethoven, Henrik Måwe",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "af35e352-c23e-4983-a33a-994f723e154f",
+        "trackId": "b3f999a1660ceafb",
+        "trackName": "Symphony No. 7 in A Major, Op. 92: II. Allegretto",
+        "artistName": "Ludwig van Beethoven, Wiener Philharmoniker, Rafael Kubelík",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "97cbd3d0-8f37-4446-b167-b88e2c2d711c",
+        "trackId": "6694ea6f1ab327ba",
+        "trackName": "Violin Sonata No. 5 in F Major, Op. 24 \"Spring\": II. Adagio molto espressivo",
+        "artistName": "Ludwig van Beethoven, Itzhak Perlman, Vladimir Ashkenazy",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "18b0235c-b9e6-40da-9456-c52f48007c5d",
+        "trackId": "8eefd3fe0ee6a4c7",
+        "trackName": "Symphonie fantastique, Op. 14, H. 48: II. Un bal. Valse. Allegro non troppo",
+        "artistName": "Hector Berlioz, Daniel Barenboim, Berliner Philharmoniker",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "78642fd1-2b71-4453-9a2e-8fb0dfbc2306",
+        "trackId": "a514eef51123e231",
+        "trackName": "Symphonie fantastique, H. 48: IV. Marche au supplice",
+        "artistName": "Hector Berlioz, Saito Kinen Orchestra, Seiji Ozawa",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "b26de7c7-62cd-43fc-9a2b-4402129d65c0",
+        "trackId": "58546c3834e42af2",
+        "trackName": "String Quartet No. 1 in C minor, Op. 51 No. 1: 2. Romanze (Poco adagio)",
+        "artistName": "Johannes Brahms, LaSalle Quartet, Walter Levin, Henry Meyer, Peter Kamnitzer, Lee Fiser",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "e568a85c-bb0e-4d3b-a9af-7ae64dc56984",
+        "trackId": "c48d001bbb8b52a1",
+        "trackName": "Symphony No. 4 in E Minor, Op. 98: II. Andante moderato",
+        "artistName": "Johannes Brahms, Pittsburgh Symphony Orchestra, William Steinberg",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "aa658708-f274-4ba9-b38a-df37ef73d6a4",
+        "trackId": "8fe9b35483169d7f",
+        "trackName": "Ballade No. 1 in G Minor, Op. 23",
+        "artistName": "Frédéric Chopin, Krystian Zimerman",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "fff36337-f56a-4ae2-aae0-b5ad654d62b4",
+        "trackId": "18bfafb81884969c",
+        "trackName": "Nocturne No. 11 in G Minor, Op. 37 No. 1",
+        "artistName": "Frédéric Chopin, Milosz Magin",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "e42341f8-c609-4a7e-9d96-30cf62dc1905",
+        "trackId": "9b9124ece9eb6c1a",
+        "trackName": "Prelude No. 4 in E Minor, Op. 28, No. 4",
+        "artistName": "Frédéric Chopin, Idil Biret",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "7db70879-ba60-4672-87f5-1d1fe5e5c8c3",
+        "trackId": "ba191cf50c5671d2",
+        "trackName": "Appalachian Spring: VII. Doppio movimento",
+        "artistName": "Aaron Copland, Leonard Bernstein, New York Philharmonic",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "e4ad004b-b00c-4dde-82f7-85aa5c1dfc05",
+        "trackId": "c7ad4df99ef3c61b",
+        "trackName": "Suite bergamasque, L. 75: III. Clair de lune",
+        "artistName": "Claude Debussy, Alice Sara Ott",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "4a061981-b6f4-4c60-b060-532631058952",
+        "trackId": "bbab2464950851db",
+        "trackName": "Images oubliées, CD 94: II. Sarabande. Souvenirs du Louvre",
+        "artistName": "Claude Debussy, Zoltán Kocsis",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
+      },
+      {
+        "id": "77858dd0-78e5-4039-8aa3-ac0e6976bb92",
+        "trackId": "afeaab3a797debbf",
+        "trackName": "Prelude to the Afternoon of a Faun, L. 86 - Remastered",
+        "artistName": "Claude Debussy, Daniel Barenboim, Orchestre de Paris",
+        "artworkUrl": null,
+        "addedAt": "2026-01-19T03:29:21.548Z"
       }
     ],
     "createdAt": "2026-01-14T17:05:11.727Z"

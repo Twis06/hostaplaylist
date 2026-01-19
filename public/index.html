@@ -59,9 +59,26 @@
           <h2 id="playlist-title"></h2>
           <p id="playlist-count" class="subtle"></p>
         </div>
-        <button class="btn-add-song" id="add-song-btn">
-          <span class="icon">+</span> Add Song
-        </button>
+        <div class="song-actions-row">
+          <button class="btn-add-song" id="add-song-btn">
+            <span class="icon">+</span> Add Song
+          </button>
+          <button class="btn-spotify-import" id="spotify-import-btn">
+            <svg class="spotify-icon" viewBox="0 0 24 24" width="24" height="24">
+              <path fill="currentColor"
+                d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" />
+            </svg>
+            Spotify
+          </button>
+          <button class="btn-apple-import" id="apple-import-btn">
+            <svg class="apple-icon" viewBox="0 0 24 24" width="22" height="22">
+              <path fill="currentColor"
+                d="M23.994 6.124c-.013-.312-.023-.624-.036-.936-.018-.423-.04-.847-.074-1.269-.048-.593-.12-1.184-.288-1.757-.174-.591-.447-1.144-.823-1.633-.375-.489-.848-.888-1.391-1.182-.543-.294-1.133-.482-1.744-.589-.614-.107-1.238-.146-1.863-.163-.634-.018-1.268-.025-1.902-.025H10.128c-.634 0-1.268.007-1.901.025-.626.017-1.25.056-1.864.163-.611.107-1.2.295-1.744.589-.542.294-1.016.693-1.391 1.182-.375.489-.649 1.042-.823 1.633-.168.573-.24 1.164-.288 1.757-.034.422-.056.846-.074 1.269-.013.312-.023.624-.036.936-.005.163-.007.326-.007.489v10.774c0 .163.002.326.007.489.013.312.023.624.036.936.018.423.04.847.074 1.269.048.593.12 1.184.288 1.757.174.591.447 1.144.823 1.633.375.489.848.888 1.391 1.182.543.294 1.133.482 1.744.589.614.107 1.238.146 1.864.163.633.018 1.267.025 1.901.025h3.745c.634 0 1.268-.007 1.902-.025.625-.017 1.249-.056 1.863-.163.611-.107 1.201-.295 1.744-.589.543-.294 1.016-.693 1.391-1.182.375-.489.649-1.042.823-1.633.168-.573.24-1.164.288-1.757.034-.422.056-.846.074-1.269.013-.312.023-.624.036-.936.005-.163.007-.326.007-.489V6.613c0-.163-.002-.326-.007-.489zM12 18.25c-3.452 0-6.25-2.798-6.25-6.25S8.548 5.75 12 5.75s6.25 2.798 6.25 6.25-2.798 6.25-6.25 6.25z" />
+              <circle fill="currentColor" cx="12" cy="12" r="3.5" />
+            </svg>
+            Apple Music
+          </button>
+        </div>
         <div id="songs-list" class="songs-list">
           <!-- Songs will be rendered here -->
         </div>
@@ -116,6 +133,93 @@
         <div class="modal-actions">
           <button class="btn-secondary" id="close-export-btn">Close</button>
           <button class="btn-primary" id="copy-export-btn">Copy</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Spotify Import Modal -->
+    <div id="spotify-modal" class="modal" style="display: none;">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content modal-spotify">
+        <div class="spotify-header">
+          <svg class="spotify-logo" viewBox="0 0 24 24" width="48" height="48">
+            <path fill="#1DB954"
+              d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" />
+          </svg>
+          <h3>Import from Spotify</h3>
+        </div>
+        <p class="spotify-subtitle">Paste a Spotify playlist link to import all songs instantly</p>
+        <input type="text" id="spotify-url-input" placeholder="https://open.spotify.com/playlist/...">
+        <div id="spotify-status" class="spotify-status" style="display: none;">
+          <div class="spotify-status-content">
+            <div class="spinner"></div>
+            <span id="spotify-status-text">Fetching playlist...</span>
+          </div>
+        </div>
+        <div id="spotify-preview" class="spotify-preview" style="display: none;">
+          <div class="preview-header">
+            <span id="preview-playlist-name" class="preview-name"></span>
+            <span id="preview-song-count" class="preview-count"></span>
+          </div>
+          <div id="preview-songs" class="preview-songs"></div>
+        </div>
+        <div class="modal-actions">
+          <button class="btn-secondary" id="close-spotify-btn">Cancel</button>
+          <button class="btn-spotify" id="import-spotify-btn" disabled>
+            <svg viewBox="0 0 24 24" width="18" height="18">
+              <path fill="currentColor"
+                d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" />
+            </svg>
+            Import Songs
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Apple Music Import Modal -->
+    <div id="apple-modal" class="modal" style="display: none;">
+      <div class="modal-backdrop"></div>
+      <div class="modal-content modal-apple">
+        <div class="apple-header">
+          <svg class="apple-logo" viewBox="0 0 24 24" width="48" height="48">
+            <defs>
+              <linearGradient id="appleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#FA2D48" />
+                <stop offset="50%" style="stop-color:#FA233B" />
+                <stop offset="100%" style="stop-color:#FB5C74" />
+              </linearGradient>
+            </defs>
+            <path fill="url(#appleGradient)"
+              d="M23.994 6.124c-.013-.312-.023-.624-.036-.936-.018-.423-.04-.847-.074-1.269-.048-.593-.12-1.184-.288-1.757-.174-.591-.447-1.144-.823-1.633-.375-.489-.848-.888-1.391-1.182-.543-.294-1.133-.482-1.744-.589-.614-.107-1.238-.146-1.863-.163-.634-.018-1.268-.025-1.902-.025H10.128c-.634 0-1.268.007-1.901.025-.626.017-1.25.056-1.864.163-.611.107-1.2.295-1.744.589-.542.294-1.016.693-1.391 1.182-.375.489-.649 1.042-.823 1.633-.168.573-.24 1.164-.288 1.757-.034.422-.056.846-.074 1.269-.013.312-.023.624-.036.936-.005.163-.007.326-.007.489v10.774c0 .163.002.326.007.489.013.312.023.624.036.936.018.423.04.847.074 1.269.048.593.12 1.184.288 1.757.174.591.447 1.144.823 1.633.375.489.848.888 1.391 1.182.543.294 1.133.482 1.744.589.614.107 1.238.146 1.864.163.633.018 1.267.025 1.901.025h3.745c.634 0 1.268-.007 1.902-.025.625-.017 1.249-.056 1.863-.163.611-.107 1.201-.295 1.744-.589.543-.294 1.016-.693 1.391-1.182.375-.489.649-1.042.823-1.633.168-.573.24-1.164.288-1.757.034-.422.056-.846.074-1.269.013-.312.023-.624.036-.936.005-.163.007-.326.007-.489V6.613c0-.163-.002-.326-.007-.489zM12 18.25c-3.452 0-6.25-2.798-6.25-6.25S8.548 5.75 12 5.75s6.25 2.798 6.25 6.25-2.798 6.25-6.25 6.25z" />
+            <circle fill="url(#appleGradient)" cx="12" cy="12" r="3.5" />
+          </svg>
+          <h3>Import from Apple Music</h3>
+        </div>
+        <p class="apple-subtitle">Paste an Apple Music playlist link to import all songs instantly</p>
+        <input type="text" id="apple-url-input" placeholder="https://music.apple.com/playlist/...">
+        <div id="apple-status" class="apple-status" style="display: none;">
+          <div class="apple-status-content">
+            <div class="spinner"></div>
+            <span id="apple-status-text">Fetching playlist...</span>
+          </div>
+        </div>
+        <div id="apple-preview" class="apple-preview" style="display: none;">
+          <div class="preview-header apple-preview-header">
+            <span id="apple-preview-playlist-name" class="preview-name"></span>
+            <span id="apple-preview-song-count" class="preview-count"></span>
+          </div>
+          <div id="apple-preview-songs" class="preview-songs"></div>
+        </div>
+        <div class="modal-actions">
+          <button class="btn-secondary" id="close-apple-btn">Cancel</button>
+          <button class="btn-apple" id="import-apple-btn" disabled>
+            <svg viewBox="0 0 24 24" width="18" height="18">
+              <path fill="currentColor"
+                d="M23.994 6.124c-.013-.312-.023-.624-.036-.936-.018-.423-.04-.847-.074-1.269-.048-.593-.12-1.184-.288-1.757-.174-.591-.447-1.144-.823-1.633-.375-.489-.848-.888-1.391-1.182-.543-.294-1.133-.482-1.744-.589-.614-.107-1.238-.146-1.863-.163-.634-.018-1.268-.025-1.902-.025H10.128c-.634 0-1.268.007-1.901.025-.626.017-1.25.056-1.864.163-.611.107-1.2.295-1.744.589-.542.294-1.016.693-1.391 1.182-.375.489-.649 1.042-.823 1.633-.168.573-.24 1.164-.288 1.757-.034.422-.056.846-.074 1.269-.013.312-.023.624-.036.936-.005.163-.007.326-.007.489v10.774c0 .163.002.326.007.489.013.312.023.624.036.936.018.423.04.847.074 1.269.048.593.12 1.184.288 1.757.174.591.447 1.144.823 1.633.375.489.848.888 1.391 1.182.543.294 1.133.482 1.744.589.614.107 1.238.146 1.864.163.633.018 1.267.025 1.901.025h3.745c.634 0 1.268-.007 1.902-.025.625-.017 1.249-.056 1.863-.163.611-.107 1.201-.295 1.744-.589.543-.294 1.016-.693 1.391-1.182.375-.489.649-1.042.823-1.633.168-.573.24-1.164.288-1.757.034-.422.056-.846.074-1.269.013-.312.023-.624.036-.936.005-.163.007-.326.007-.489V6.613c0-.163-.002-.326-.007-.489zM12 18.25c-3.452 0-6.25-2.798-6.25-6.25S8.548 5.75 12 5.75s6.25 2.798 6.25 6.25-2.798 6.25-6.25 6.25z" />
+              <circle fill="currentColor" cx="12" cy="12" r="3.5" />
+            </svg>
+            Import Songs
+          </button>
         </div>
       </div>
     </div>

@@ -350,4 +350,302 @@ document.addEventListener('DOMContentLoaded', () => {
             hideModal(backdrop.closest('.modal'));
         });
     });
+
+    // ============================================
+    // SPOTIFY IMPORT FUNCTIONALITY
+    // ============================================
+
+    const spotifyModal = document.getElementById('spotify-modal');
+    const spotifyUrlInput = document.getElementById('spotify-url-input');
+    const spotifyStatus = document.getElementById('spotify-status');
+    const spotifyStatusText = document.getElementById('spotify-status-text');
+    const spotifyPreview = document.getElementById('spotify-preview');
+    const importSpotifyBtn = document.getElementById('import-spotify-btn');
+
+    let spotifyPlaylistData = null;
+
+    // Open Spotify import modal
+    document.getElementById('spotify-import-btn').addEventListener('click', () => {
+        spotifyUrlInput.value = '';
+        spotifyStatus.style.display = 'none';
+        spotifyStatus.className = 'spotify-status';
+        spotifyPreview.style.display = 'none';
+        importSpotifyBtn.disabled = true;
+        spotifyPlaylistData = null;
+        showModal(spotifyModal);
+        spotifyUrlInput.focus();
+    });
+
+    // Close Spotify modal
+    document.getElementById('close-spotify-btn').addEventListener('click', () => {
+        hideModal(spotifyModal);
+    });
+
+    // Fetch Spotify playlist when URL is pasted
+    let spotifyFetchTimeout = null;
+    spotifyUrlInput.addEventListener('input', () => {
+        clearTimeout(spotifyFetchTimeout);
+        const url = spotifyUrlInput.value.trim();
+
+        if (!url) {
+            spotifyStatus.style.display = 'none';
+            spotifyPreview.style.display = 'none';
+            importSpotifyBtn.disabled = true;
+            spotifyPlaylistData = null;
+            return;
+        }
+
+        // Check if it looks like a Spotify URL
+        if (url.includes('spotify.com/playlist') || url.includes('spotify:playlist:') || /^[a-zA-Z0-9]{22}$/.test(url)) {
+            spotifyFetchTimeout = setTimeout(() => fetchSpotifyPlaylist(url), 500);
+        }
+    });
+
+    // Also trigger on paste
+    spotifyUrlInput.addEventListener('paste', (e) => {
+        setTimeout(() => {
+            const url = spotifyUrlInput.value.trim();
+            if (url.includes('spotify.com/playlist') || url.includes('spotify:playlist:') || /^[a-zA-Z0-9]{22}$/.test(url)) {
+                fetchSpotifyPlaylist(url);
+            }
+        }, 100);
+    });
+
+    async function fetchSpotifyPlaylist(url) {
+        spotifyStatus.style.display = 'block';
+        spotifyStatus.className = 'spotify-status';
+        spotifyStatusText.textContent = 'Fetching playlist...';
+        spotifyStatus.querySelector('.spinner').style.display = 'block';
+        spotifyPreview.style.display = 'none';
+        importSpotifyBtn.disabled = true;
+        spotifyPlaylistData = null;
+
+        try {
+            const data = await api(`/api/spotify/playlist?url=${encodeURIComponent(url)}`);
+
+            if (data.songs && data.songs.length > 0) {
+                spotifyPlaylistData = data;
+
+                // Show success status
+                spotifyStatus.className = 'spotify-status success';
+                spotifyStatus.querySelector('.spinner').style.display = 'none';
+                spotifyStatusText.textContent = `Found ${data.songs.length} songs!`;
+
+                // Show preview
+                showSpotifyPreview(data);
+                importSpotifyBtn.disabled = false;
+            } else {
+                throw new Error('No songs found in playlist');
+            }
+        } catch (error) {
+            spotifyStatus.className = 'spotify-status error';
+            spotifyStatus.querySelector('.spinner').style.display = 'none';
+            spotifyStatusText.textContent = error.message || 'Failed to fetch playlist';
+            spotifyPreview.style.display = 'none';
+            importSpotifyBtn.disabled = true;
+        }
+    }
+
+    function showSpotifyPreview(data) {
+        document.getElementById('preview-playlist-name').textContent = data.playlistName;
+        document.getElementById('preview-song-count').textContent = `${data.songs.length} songs`;
+
+        const previewSongs = document.getElementById('preview-songs');
+        const displaySongs = data.songs.slice(0, 50); // Show max 50 songs in preview
+
+        previewSongs.innerHTML = displaySongs.map((song, index) => `
+            <div class="preview-song-item">
+                <span class="preview-song-number">${index + 1}</span>
+                <div class="preview-song-info">
+                    <div class="preview-song-title">${escapeHtml(song.trackName)}</div>
+                    <div class="preview-song-artist">${escapeHtml(song.artistName)}</div>
+                </div>
+            </div>
+        `).join('');
+
+        if (data.songs.length > 50) {
+            previewSongs.innerHTML += `
+                <div class="preview-song-item" style="justify-content: center; color: var(--text-secondary);">
+                    ... and ${data.songs.length - 50} more songs
+                </div>
+            `;
+        }
+
+        spotifyPreview.style.display = 'block';
+    }
+
+    // Import songs from Spotify
+    importSpotifyBtn.addEventListener('click', async () => {
+        if (!spotifyPlaylistData || !spotifyPlaylistData.songs.length) return;
+
+        importSpotifyBtn.disabled = true;
+        spotifyStatus.className = 'spotify-status';
+        spotifyStatus.querySelector('.spinner').style.display = 'block';
+        spotifyStatusText.textContent = 'Importing songs...';
+
+        try {
+            const result = await api(`/api/playlists/${currentPlaylistId}/songs/bulk`, {
+                method: 'POST',
+                body: { songs: spotifyPlaylistData.songs }
+            });
+
+            hideModal(spotifyModal);
+            loadPlaylist(currentPlaylistId);
+            showToast(`Added ${result.added} songs from Spotify!`);
+        } catch (error) {
+            spotifyStatus.className = 'spotify-status error';
+            spotifyStatus.querySelector('.spinner').style.display = 'none';
+            spotifyStatusText.textContent = error.message || 'Failed to import songs';
+            importSpotifyBtn.disabled = false;
+        }
+    });
+
+    // ============================================
+    // APPLE MUSIC IMPORT FUNCTIONALITY
+    // ============================================
+
+    const appleModal = document.getElementById('apple-modal');
+    const appleUrlInput = document.getElementById('apple-url-input');
+    const appleStatus = document.getElementById('apple-status');
+    const appleStatusText = document.getElementById('apple-status-text');
+    const applePreview = document.getElementById('apple-preview');
+    const importAppleBtn = document.getElementById('import-apple-btn');
+
+    let applePlaylistData = null;
+
+    // Open Apple Music import modal
+    document.getElementById('apple-import-btn').addEventListener('click', () => {
+        appleUrlInput.value = '';
+        appleStatus.style.display = 'none';
+        appleStatus.className = 'apple-status';
+        applePreview.style.display = 'none';
+        importAppleBtn.disabled = true;
+        applePlaylistData = null;
+        showModal(appleModal);
+        appleUrlInput.focus();
+    });
+
+    // Close Apple Music modal
+    document.getElementById('close-apple-btn').addEventListener('click', () => {
+        hideModal(appleModal);
+    });
+
+    // Fetch Apple Music playlist when URL is pasted
+    let appleFetchTimeout = null;
+    appleUrlInput.addEventListener('input', () => {
+        clearTimeout(appleFetchTimeout);
+        const url = appleUrlInput.value.trim();
+
+        if (!url) {
+            appleStatus.style.display = 'none';
+            applePreview.style.display = 'none';
+            importAppleBtn.disabled = true;
+            applePlaylistData = null;
+            return;
+        }
+
+        // Check if it looks like an Apple Music URL
+        if (url.includes('music.apple.com') && url.includes('playlist')) {
+            appleFetchTimeout = setTimeout(() => fetchAppleMusicPlaylist(url), 500);
+        }
+    });
+
+    // Also trigger on paste
+    appleUrlInput.addEventListener('paste', (e) => {
+        setTimeout(() => {
+            const url = appleUrlInput.value.trim();
+            if (url.includes('music.apple.com') && url.includes('playlist')) {
+                fetchAppleMusicPlaylist(url);
+            }
+        }, 100);
+    });
+
+    async function fetchAppleMusicPlaylist(url) {
+        appleStatus.style.display = 'block';
+        appleStatus.className = 'apple-status';
+        appleStatusText.textContent = 'Fetching playlist...';
+        appleStatus.querySelector('.spinner').style.display = 'block';
+        applePreview.style.display = 'none';
+        importAppleBtn.disabled = true;
+        applePlaylistData = null;
+
+        try {
+            const data = await api(`/api/applemusic/playlist?url=${encodeURIComponent(url)}`);
+
+            if (data.songs && data.songs.length > 0) {
+                applePlaylistData = data;
+
+                // Show success status
+                appleStatus.className = 'apple-status success';
+                appleStatus.querySelector('.spinner').style.display = 'none';
+                appleStatusText.textContent = `Found ${data.songs.length} songs!`;
+
+                // Show preview
+                showApplePreview(data);
+                importAppleBtn.disabled = false;
+            } else {
+                throw new Error('No songs found in playlist');
+            }
+        } catch (error) {
+            appleStatus.className = 'apple-status error';
+            appleStatus.querySelector('.spinner').style.display = 'none';
+            appleStatusText.textContent = error.message || 'Failed to fetch playlist';
+            applePreview.style.display = 'none';
+            importAppleBtn.disabled = true;
+        }
+    }
+
+    function showApplePreview(data) {
+        document.getElementById('apple-preview-playlist-name').textContent = data.playlistName;
+        document.getElementById('apple-preview-song-count').textContent = `${data.songs.length} songs`;
+
+        const previewSongs = document.getElementById('apple-preview-songs');
+        const displaySongs = data.songs.slice(0, 50); // Show max 50 songs in preview
+
+        previewSongs.innerHTML = displaySongs.map((song, index) => `
+            <div class="preview-song-item">
+                <span class="preview-song-number">${index + 1}</span>
+                <div class="preview-song-info">
+                    <div class="preview-song-title">${escapeHtml(song.trackName)}</div>
+                    <div class="preview-song-artist">${escapeHtml(song.artistName)}</div>
+                </div>
+            </div>
+        `).join('');
+
+        if (data.songs.length > 50) {
+            previewSongs.innerHTML += `
+                <div class="preview-song-item" style="justify-content: center; color: var(--text-secondary);">
+                    ... and ${data.songs.length - 50} more songs
+                </div>
+            `;
+        }
+
+        applePreview.style.display = 'block';
+    }
+
+    // Import songs from Apple Music
+    importAppleBtn.addEventListener('click', async () => {
+        if (!applePlaylistData || !applePlaylistData.songs.length) return;
+
+        importAppleBtn.disabled = true;
+        appleStatus.className = 'apple-status';
+        appleStatus.querySelector('.spinner').style.display = 'block';
+        appleStatusText.textContent = 'Importing songs...';
+
+        try {
+            const result = await api(`/api/playlists/${currentPlaylistId}/songs/bulk`, {
+                method: 'POST',
+                body: { songs: applePlaylistData.songs }
+            });
+
+            hideModal(appleModal);
+            loadPlaylist(currentPlaylistId);
+            showToast(`Added ${result.added} songs from Apple Music!`);
+        } catch (error) {
+            appleStatus.className = 'apple-status error';
+            appleStatus.querySelector('.spinner').style.display = 'none';
+            appleStatusText.textContent = error.message || 'Failed to import songs';
+            importAppleBtn.disabled = false;
+        }
+    });
 });
